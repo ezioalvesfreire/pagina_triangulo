@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-divice-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Teste de triângulo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1>Teste o tipo de triângulo</h1>
+    <header>
+
+        <section>
+            <div>
+                <p>informe o valor do lado A:<input type="number" name="txtlado-A" id="txtlado-A"></p>
+                <p>informe o valor do lado B:<input type="number" name="txtlado-B" id="txtlado-B"></p>
+                <p>informe o valor do lado C:<input type="number" name="txtlado-C" id="txtlado-C"></p>
+
+                <p> <input type="button" value="verificar" id="verificar"> </p>
+            </div>
+
+            <div id="res">
+                <p id="tipo-triangulo">Informe os dados acima !</p>
+            </div>
+            <div id="msg">
+
+            </div>
+            <div id="foto">
+                <img id="imagem" src="triangulos/dados.jpg" alt="imagem dos dados">
+            </div>
+        </section>
+    </header>
+    <footer>Desenvolvido por Ezio Alves</footer>
+    <script>
+        var el = document.getElementById("verificar");
+        el.addEventListener("click", function() {
+            carregar()
+        }, false);
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
